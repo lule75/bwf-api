@@ -19,9 +19,23 @@ class Player:
     def __str__(self):
         return str(self.__dict__)
 
-if __name__ == "__main__":
+def rankings(event, year, month, rows):
 
-    page = requests.get('https://bwfbadminton.com/rankings/2/bwf-world-rankings/6/men-s-singles/2020/12/?rows=25&page_no=1')
+    if event == "men singles":
+        page = requests.get('https://bwfbadminton.com/rankings/2/bwf-world-rankings/6/men-s-singles/' + str(year) + '/' 
+        + str(month) + '/?rows=' + str(rows) + '&page_no=1')
+    elif event == "women singles":
+        page = requests.get('https://bwfbadminton.com/rankings/2/bwf-world-rankings/7/women-s-singles/' + str(year) + '/' 
+        + str(month) + '/?rows=' + str(rows) + '&page_no=1')
+    elif event == "men doubles":
+        page = requests.get('https://bwfbadminton.com/rankings/2/bwf-world-rankings/8/men-s-doubles/' + str(year) + '/' 
+        + str(month) + '/?rows=' + str(rows) + '&page_no=1')
+    elif event == "women doubles":
+        page = requests.get('https://bwfbadminton.com/rankings/2/bwf-world-rankings/9/women-s-doubles/' + str(year) + '/' 
+        + str(month) + '/?rows=' + str(rows) + '&page_no=1')
+    elif event == "mixed doubles":
+        page = requests.get('https://bwfbadminton.com/rankings/2/bwf-world-rankings/10/mixed-doubles/' + str(year) + '/' 
+        + str(month) + '/?rows=' + str(rows) + '&page_no=1')
 
     soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -66,8 +80,12 @@ if __name__ == "__main__":
         playerList.append(Player(rank, country, name, ranking_num, record, earnings, points))
     for p in playerList:
         print(p)
-    
 
+def profile():
+    
+    
+if __name__ == '__main__':
+    rankings("women singles", 2010, 12, 25)
 
 
 
