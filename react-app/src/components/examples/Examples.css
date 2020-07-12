@@ -1,0 +1,26 @@
+.examples {
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+    width:800px;
+    border:1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #949fb0;
+}
+
+.examples .title {
+    border-bottom:1px solid lightgrey;
+}
+
+.examples .link {
+    background-color: whitesmoke;
+    border-bottom:1px solid lightgrey;
+    border-top:1px solid lightgrey;
+}
+
+.examples .json {
+    padding:20px;
+    text-align: left;
+    height:500px;
+    overflow:auto;
+}
