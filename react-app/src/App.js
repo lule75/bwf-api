@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import JsonFile from './components/JsonFile';
 import './App.css';
 
 class App extends Component{  
@@ -9,7 +10,9 @@ class App extends Component{
 
   render() {
     return(
-      <></>
+      <Router>
+        <Route exact path="/:event/:year/:month/:rows" component={JsonFile}/>
+      </Router>
     )
   }
 }
