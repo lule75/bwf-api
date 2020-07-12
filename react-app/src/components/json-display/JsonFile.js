@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import ReactJson from 'react-json-view';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import './JsonFile.css';
+
 
 class JsonFile extends Component{
     
@@ -24,14 +27,15 @@ class JsonFile extends Component{
         if (this.state.notRan) {
             this.getRanking()
             return (
-                <></>
+                <div class="loading">
+                    <CircularProgress />
+                </div>
             )
         }
         else {
             return(
-                <>
-                    <ReactJson src={this.state.json} />
-                </>
+                <ReactJson src={this.state.json} />
+
             )
         }
         
