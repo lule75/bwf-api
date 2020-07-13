@@ -10,6 +10,10 @@ class Main extends Component {
             <div id="outer">
                 <Navbar />
                 <div id="inner">
+                    <div className="intro">
+                        <p className="title">Up-to-date BWF World Rankings on demand.</p>
+                        <p className="description">Get current and historical badminton world rankings alongside player statistics with BWF API</p>
+                    </div>
                     <Examples />
                 </div>
             </div>

@@ -7,4 +7,21 @@
     display: inline-block;
   }
 
+  #inner .intro {
+    margin-top:100px;
+  }
+
+  #inner .intro .title {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  #inner .intro .description {
+    margin-top:60px;
+    margin-bottom:80px;
+    color: #666666;
+    font-size: 25px;
+    width:800px;
+  }
+
   

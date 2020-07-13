@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.feature-text {
+    font-size:18px;
+    color: #666666;
+    /* border-bottom: 1px solid #666666; */
+}
+
 .examples {
     margin-top:50px;
-    margin-bottom:50px;
+    margin-bottom:80px;
     text-align: center;
     width:800px;
     border:1px solid lightgrey;
@@ -8,14 +16,11 @@
     box-shadow: 0 10px 30px #949fb0;
 }
 
-.examples .title {
-    border-bottom:1px solid lightgrey;
-}
-
 .examples .link {
     background-color: whitesmoke;
     border-bottom:1px solid lightgrey;
     border-top:1px solid lightgrey;
+    font-family: 'Fira Code', monospace;
 }
 
 .examples .json {

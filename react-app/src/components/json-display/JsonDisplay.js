@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactJson from 'react-json-view';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import './JsonFile.css';
+import './JsonDisplay.css';
 
 class JsonDisplay extends Component {
     constructor(props) {
@@ -13,10 +13,8 @@ class JsonDisplay extends Component {
     }
 
     getRanking() {
-        console.log(this.props.params)
         const {event, year, month, rows} = this.props
         return fetch(`/${event}/${year}/${month}/${rows}`).then(data => data.json()).then(json => {
-            console.log(json)
             this.setState({ notRan: false, json})
         })
     }
@@ -26,7 +24,7 @@ class JsonDisplay extends Component {
         if (this.state.notRan) {
             this.getRanking()
             return (
-                <div class="loading">
+                <div className="loading-circle">
                     <CircularProgress />
                 </div>
             )
