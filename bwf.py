@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 class Player:
     def __init__(self, rank, country, name, ranking_change, record, earnings, points):
-        self.rank = rank
+        self.rank = int(rank)
         self.country = country
         self.name = name
         self.ranking_change = ranking_change
@@ -16,7 +16,7 @@ class Player:
         self.earnings = earnings
         pointstmnts = list(points.split("/"))
         self.points = pointstmnts[0]
-        self.tmntsPlayed = pointstmnts[1]
+        self.tmntsPlayed = int(pointstmnts[1])
     def __str__(self):
         return str(self.__dict__)
 
