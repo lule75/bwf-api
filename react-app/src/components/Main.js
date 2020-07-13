@@ -16,6 +16,10 @@ class Main extends Component {
                     </div>
                     <Examples />
                 </div>
+
+                <div className="summary">
+                    <p><b>BWF API</b> is a simple and easy-to-use API that returns JSON metadata for current and historical <br/>badminton world rankings alongside detailed player information.</p>
+                </div>
             </div>
         )
     }
