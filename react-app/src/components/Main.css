@@ -27,15 +27,29 @@
   #outer .summary {
     width:100%;
     background-color: #fcfcfc;
-    height:500px;
+    height:400px;
     border-top:1px solid lightgrey;
   }
 
-  #outer .summary p {
+  #outer .summary .blurb {
     font-size: 20px;
     margin-top:80px;
     line-height: 40px;
   }
+
+  #outer .summary .features {
+    display:inline-block;
+    margin-top:80px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  #outer .summary .features .features-title {
+    margin:0px;
+    font-size:25px;
+    font-weight: 600;
+  }
+
 
 
   
