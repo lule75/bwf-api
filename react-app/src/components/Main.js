@@ -3,6 +3,7 @@ import './Main.css';
 import Navbar from './navbar/Navbar';
 import Examples from './examples/Examples';
 import FadeIn from 'react-fade-in';
+import Footer from './footer/Footer';
 
 
 class Main extends Component {
@@ -32,8 +33,8 @@ class Main extends Component {
                             <p className="features-title">Easy Integration</p>
                             <p>Get JSON results with simple HTTP GET requests.</p>
                         </div>
-
                     </div>
+                    <Footer />
                 </div>
             </FadeIn>
         )
