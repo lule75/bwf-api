@@ -15,7 +15,7 @@ class Main extends Component {
                     <Navbar />
                     <div id="inner">
                         <div className="intro">
-                            <p className="title">Up-to-date BWF World Rankings on demand.</p>
+                            <p className="title">Up-to-date BWF World Rankings on demand</p>
                             <p className="description">Get current and historical badminton world rankings alongside player statistics with BWF API</p>
                         </div>
                         <Examples />

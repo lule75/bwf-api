@@ -64,7 +64,7 @@ def rankings(event, year, month, rows):
             if len(name) > 1:
                 name1 = list(list(name[0].children)[1].children)[0]
                 name2 = list(list(name[2].children)[1].children)[0]
-                name = name1 + "," + name2
+                name = name1 + ", " + name2
             else:
                 name = ' '.join(list(list(name[0].children)[1].children)[0].split())
 
