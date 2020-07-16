@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import './Examples.css';
 import JsonDisplay from '../json-display/JsonDisplay';
+import Getbutton from '../getbutton/Getbutton';
 
 class Examples extends Component {
 
@@ -26,7 +27,8 @@ class Examples extends Component {
                 <div className="examples">
                     <p>Top 10 men's singles players in the world right now</p>
                     <div className="link">
-                        <p>http://localhost:3000/men-singles/{this.state.year}/{this.state.month}/10</p>
+                        <Getbutton />
+                        <p className="get-request">http://localhost:3000/men-singles/{this.state.year}/{this.state.month}/10</p>
                     </div>
                     <div className="json">
                         <JsonDisplay event="men-singles" year={this.state.year} month={this.state.month} rows="10" />
@@ -38,7 +40,8 @@ class Examples extends Component {
                 <div className="examples">
                     <p>Top 10 women's doubles pairs during March 2013</p>
                     <div className="link">
-                        <p>http://localhost:3000/women-doubles/2013/3/10</p>
+                        <Getbutton />
+                        <p className="get-request">http://localhost:3000/women-doubles/2013/3/10</p>
                     </div>
                     <div className="json">
                         <JsonDisplay event="women-doubles" year="2013" month="3" rows="10" />
@@ -50,7 +53,8 @@ class Examples extends Component {
                 <div className="examples">
                     <p>Top 25 mixed doubles pairs in the world right now</p>
                     <div className="link">
-                        <p>http://localhost:3000/mixed-doubles/{this.state.year}/{this.state.month}/25</p>
+                        <Getbutton />
+                        <p className="get-request">http://localhost:3000/mixed-doubles/{this.state.year}/{this.state.month}/25</p>
                     </div>
                     <div className="json">
                         <JsonDisplay event="mixed-doubles" year={this.state.year} month={this.state.month} rows="25" />
