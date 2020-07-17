@@ -18,7 +18,7 @@ class Footer extends Component {
                 <div className="footer-features2">
                     <p className="footer-features-title">Support</p>
                     <p className="info"><a href="mailto:raymondji@berkeley.edu" className="url">Contact</a><br /><br /><br />
-                    <a href="https://github.com/raymondmengji/bwf-api" class="url">Github</a></p>
+                    <a href="https://github.com/raymondmengji/bwf-api" className="url">Github</a></p>
                 </div>
             </div>
         )

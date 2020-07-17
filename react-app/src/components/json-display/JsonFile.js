@@ -17,7 +17,6 @@ class JsonFile extends Component{
     getRanking() {
         const {event, year, month, rows} = this.props.match.params
         return fetch(`/${event}/${year}/${month}/${rows}`).then(data => data.json()).then(json => {
-            console.log(json)
             this.setState({ notRan: false, json})
         })
     }
@@ -27,7 +26,7 @@ class JsonFile extends Component{
         if (this.state.notRan) {
             this.getRanking()
             return (
-                <div class="loading">
+                <div className="loading">
                     <CircularProgress />
                 </div>
             )
