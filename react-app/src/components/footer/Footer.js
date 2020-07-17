@@ -9,6 +9,7 @@ class Footer extends Component {
                 <div className="footer-features1">
                     <p className="footer-features-title">Work In Progress</p>
                     <p className="info">Documentation<br />
+                    Convert to TypeScript<br />
                     GET requests for player bio<br />
                     GET requests for specific tournaments<br />
                     User accounts with unique API keys

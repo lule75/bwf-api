@@ -15,8 +15,24 @@ class JsonFile extends Component{
     }
 
     getRanking() {
-        const {event, year, month, rows} = this.props.match.params
-        return fetch(`/${event}/${year}/${month}/${rows}`).then(data => data.json()).then(json => {
+        const {event, year, week, rows} = this.props.match.params
+        
+        if (typeof year == 'undefined' && typeof week == 'undefined' && typeof rows == 'undefined') {
+            return fetch(`/${event}`).then(data => data.json()).then(json => {
+                this.setState({ notRan: false, json})
+            })
+        }
+        else if (typeof year == 'undefined' && typeof week == 'undefined') {
+            return fetch(`/${event}/${rows}`).then(data => data.json()).then(json => {
+                this.setState({ notRan: false, json})
+            })
+        }
+        else if (typeof rows == 'undefined') {
+            return fetch(`/${event}/${year}/${week}`).then(data => data.json()).then(json => {
+                this.setState({ notRan: false, json})
+            })
+        }
+        return fetch(`/${event}/${year}/${week}/${rows}`).then(data => data.json()).then(json => {
             this.setState({ notRan: false, json})
         })
     }

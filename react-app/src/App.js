@@ -13,10 +13,10 @@ class App extends Component{
       <Router>
         <Switch>
           <Route exact path="/" component={Main}/>
-          <Route exact path="/:event/:year/:month/:rows" component={JsonFile}/>
+          <Route exact path="/:event/:year/:week/:rows" component={JsonFile}/>
           <Route exact path="/:event" component={JsonFile}/>
           <Route exact path="/:event/:rows" component={JsonFile}/>
-          <Route exact path="/:event/:year/:month" component={JsonFile}/>
+          <Route exact path="/:event/:year/:week" component={JsonFile}/>
           <Route component={Error404} status={404}/>
         </Switch>
       </Router>

@@ -5,27 +5,13 @@ import Getbutton from '../getbutton/Getbutton';
 
 class Examples extends Component {
 
-    constructor(props) {
-        super(props)
-
-        var today = new Date()
-        var year = today.getFullYear()
-        var month = today.getMonth()
-
-        this.state = {
-            year: year,
-            month: month
-        }
-    }
-
-
     render() {
         return (
             <> 
-                <p><span className="feature-text">Option to choose between events...</span></p>
+                <p><span className="feature-text">Choose between events...</span></p>
 
                 <div className="examples">
-                    <p>Top 25 men's singles players in the world right now</p>
+                    <p>Top 10 men's singles players in the world right now</p>
                     <div className="link">
                         <Getbutton />
                         <p className="get-request">http://localhost:3000/men-singles</p>
@@ -35,20 +21,20 @@ class Examples extends Component {
                     </div>
                 </div>
 
-                <p><span className="feature-text">Ability to get historical data...</span></p>
+                <p><span className="feature-text">Get historical data...</span></p>
 
                 <div className="examples">
-                    <p>Top 25 women's doubles pairs during March 2013</p>
+                    <p>Top 10 women's doubles pairs during week #3 of 2013</p>
                     <div className="link">
                         <Getbutton />
                         <p className="get-request">http://localhost:3000/women-doubles/2013/3</p>
                     </div>
                     <div className="json">
-                        <JsonDisplay event="women-doubles" year="2013" month="3" />
+                        <JsonDisplay event="women-doubles" year="2013" week="3" />
                     </div>
                 </div>
 
-                <p><span className="feature-text">Ability to get a custom number of top players...</span></p>
+                <p><span className="feature-text">Get a custom number of top players...</span></p>
 
                 <div className="examples">
                     <p>Top 18 mixed doubles pairs in the world right now</p>
@@ -61,16 +47,16 @@ class Examples extends Component {
                     </div>
                 </div>
 
-                <p><span className="feature-text">And the ability to do both</span></p>
+                <p><span className="feature-text">And the ability to do all options</span></p>
 
                 <div className="examples">
-                    <p>Top 5 women's singles players during November 2017</p>
+                    <p>Top 5 women's singles players during week #38 of 2017</p>
                     <div className="link">
                         <Getbutton />
-                        <p className="get-request">http://localhost:3000/women-singles/2017/11/5</p>
+                        <p className="get-request">http://localhost:3000/women-singles/2017/38/5</p>
                     </div>
                     <div className="json">
-                        <JsonDisplay event="women-singles" year="2017" month="11" rows="5" />
+                        <JsonDisplay event="women-singles" year="2017" week="38" rows="5" />
                     </div>
                 </div>
             </>
