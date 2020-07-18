@@ -16,21 +16,21 @@ class JsonDisplay extends Component {
         const {event, year, week, rows} = this.props    
         
         if (typeof year == 'undefined' && typeof week == 'undefined' && typeof rows == 'undefined') {
-            return fetch(`/${event}`).then(data => data.json()).then(json => {
+            return fetch(`/api/${event}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
         else if (typeof year == 'undefined' && typeof week == 'undefined') {
-            return fetch(`/${event}/${rows}`).then(data => data.json()).then(json => {
+            return fetch(`/api/${event}/${rows}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
         else if (typeof rows == 'undefined') {
-            return fetch(`/${event}/${year}/${week}`).then(data => data.json()).then(json => {
+            return fetch(`/api/${event}/${year}/${week}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
-        return fetch(`/${event}/${year}/${week}/${rows}`).then(data => data.json()).then(json => {
+        return fetch(`/api/${event}/${year}/${week}/${rows}`).then(data => data.json()).then(json => {
             this.setState({ notRan: false, json})
         })
     }
