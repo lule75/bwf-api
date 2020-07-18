@@ -13,7 +13,7 @@ class JsonDisplay extends Component {
     }
 
     getRanking() {
-        const {event, year, week, rows} = this.props
+        const {event, year, week, rows} = this.props    
         
         if (typeof year == 'undefined' && typeof week == 'undefined' && typeof rows == 'undefined') {
             return fetch(`/${event}`).then(data => data.json()).then(json => {
