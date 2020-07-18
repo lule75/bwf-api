@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bwf-api/static/css/main.a92e50ac.chunk.css",
-    "main.js": "/bwf-api/static/js/main.f847aa60.chunk.js",
-    "main.js.map": "/bwf-api/static/js/main.f847aa60.chunk.js.map",
+    "main.js": "/bwf-api/static/js/main.c5475d77.chunk.js",
+    "main.js.map": "/bwf-api/static/js/main.c5475d77.chunk.js.map",
     "runtime-main.js": "/bwf-api/static/js/runtime-main.5ba11e03.js",
     "runtime-main.js.map": "/bwf-api/static/js/runtime-main.5ba11e03.js.map",
     "static/js/2.7f30a72f.chunk.js": "/bwf-api/static/js/2.7f30a72f.chunk.js",
     "static/js/2.7f30a72f.chunk.js.map": "/bwf-api/static/js/2.7f30a72f.chunk.js.map",
     "index.html": "/bwf-api/index.html",
-    "precache-manifest.84ab87cff7a53e10be0ece8979c42ec7.js": "/bwf-api/precache-manifest.84ab87cff7a53e10be0ece8979c42ec7.js",
+    "precache-manifest.f725cff1fc62ae384ebd23fbca76bffb.js": "/bwf-api/precache-manifest.f725cff1fc62ae384ebd23fbca76bffb.js",
     "service-worker.js": "/bwf-api/service-worker.js",
     "static/css/main.a92e50ac.chunk.css.map": "/bwf-api/static/css/main.a92e50ac.chunk.css.map",
     "static/js/2.7f30a72f.chunk.js.LICENSE.txt": "/bwf-api/static/js/2.7f30a72f.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.5ba11e03.js",
     "static/js/2.7f30a72f.chunk.js",
     "static/css/main.a92e50ac.chunk.css",
-    "static/js/main.f847aa60.chunk.js"
+    "static/js/main.c5475d77.chunk.js"
   ]
 }
