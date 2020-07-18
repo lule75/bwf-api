@@ -16,7 +16,8 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
+    "start-front": "react-scripts start",
     "start-api": "cd .. && python3 app.py",
     "dev": "concurrently \"yarn start\" \"yarn start-api\"",
     "build": "react-scripts build",
