@@ -3,7 +3,7 @@ from flask_caching import Cache
 from bwf import rankings
 import datetime
 
-app = Flask(__name__, static_folder='./react-app/build', static_url_path='/')
+app = Flask(__name__, static_folder='./react-app/public', static_url_path='/')
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
 @app.route('/')
