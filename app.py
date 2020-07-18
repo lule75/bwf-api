@@ -3,7 +3,7 @@ from flask_caching import Cache
 from bwf import rankings
 import datetime
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='./react-app/build', static_url_path='/')
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
 @app.route('/<event>/<year>/<week>/<rows>', methods=['GET'])
@@ -34,5 +34,5 @@ def historical_rank(event, year, week):
     output = rankings(event, year, week, 10)
     return jsonify(output)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 80))
