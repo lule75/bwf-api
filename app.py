@@ -3,14 +3,9 @@ from flask_caching import Cache
 from bwf import rankings
 import datetime
 
-app = Flask(__name__, static_folder='./react-app/build', static_url_path='/')
+app = Flask(__name__)
 # app = Flask(__name__)
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
-
-@app.route('/')
-def index():
-    return app.send_static_file('index.html')
-
 
 @app.route('/<event>/<year>/<week>/<rows>', methods=['GET'])
 @cache.cached(timeout=60)
