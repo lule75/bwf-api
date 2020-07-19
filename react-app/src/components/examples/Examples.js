@@ -14,7 +14,7 @@ class Examples extends Component {
                     <p>Top 10 men's singles players in the world right now</p>
                     <div className="link">
                         <Getbutton />
-                        <p className="get-request">http://localhost:3000/men-singles</p>
+                        <p className="get-request">https://raymondmengji.github.io/bwf-api/men-singles</p>
                     </div>
                     <div className="json">
                         <JsonDisplay event="men-singles" />
@@ -27,7 +27,7 @@ class Examples extends Component {
                     <p>Top 10 women's doubles pairs during week #3 of 2013</p>
                     <div className="link">
                         <Getbutton />
-                        <p className="get-request">http://localhost:3000/women-doubles/2013/3</p>
+                        <p className="get-request">https://raymondmengji.github.io/bwf-api/women-doubles/2013/3</p>
                     </div>
                     <div className="json">
                         <JsonDisplay event="women-doubles" year="2013" week="3" />
@@ -40,7 +40,7 @@ class Examples extends Component {
                     <p>Top 18 mixed doubles pairs in the world right now</p>
                     <div className="link">
                         <Getbutton />
-                        <p className="get-request">http://localhost:3000/mixed-doubles/18</p>
+                        <p className="get-request">https://raymondmengji.github.io/bwf-api/mixed-doubles/18</p>
                     </div>
                     <div className="json">
                         <JsonDisplay event="mixed-doubles" rows="18" />
@@ -53,7 +53,7 @@ class Examples extends Component {
                     <p>Top 5 women's singles players during week #38 of 2017</p>
                     <div className="link">
                         <Getbutton />
-                        <p className="get-request">http://localhost:3000/women-singles/2017/38/5</p>
+                        <p className="get-request">https://raymondmengji.github.io/bwf-api/women-singles/2017/38/5</p>
                     </div>
                     <div className="json">
                         <JsonDisplay event="women-singles" year="2017" week="38" rows="5" />

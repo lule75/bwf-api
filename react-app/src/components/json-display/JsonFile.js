@@ -19,21 +19,21 @@ class JsonFile extends Component{
         console.log(this.props.match.params)
         
         if (typeof year == 'undefined' && typeof week == 'undefined' && typeof rows == 'undefined') {
-            return fetch(`http://localhost:5000/api/${event}`).then(data => data.json()).then(json => {
+            return fetch(`https://bwf-api.herokuapp.com/api/${event}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
         else if (typeof year == 'undefined' && typeof week == 'undefined') {
-            return fetch(`http://localhost:5000/api/${event}/${rows}`).then(data => data.json()).then(json => {
+            return fetch(`https://bwf-api.herokuapp.com/api/${event}/${rows}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
         else if (typeof rows == 'undefined') {
-            return fetch(`http://localhost:5000/api/${event}/${year}/${week}`).then(data => data.json()).then(json => {
+            return fetch(`https://bwf-api.herokuapp.com/api/${event}/${year}/${week}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
-        return fetch(`http://localhost:5000/api/${event}/${year}/${week}/${rows}`).then(data => data.json()).then(json => {
+        return fetch(`https://bwf-api.herokuapp.com/api/${event}/${year}/${week}/${rows}`).then(data => data.json()).then(json => {
             this.setState({ notRan: false, json})
         })
     }
