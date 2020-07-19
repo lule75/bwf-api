@@ -22,6 +22,8 @@ Web app accessible across all browsers except for certain IE versions
 ### Technologies Used
 HTML/CSS/Javascript/Python
 
+Beautiful Soup
+
 React, Flask
 
 Heroku
