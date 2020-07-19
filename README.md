@@ -1,6 +1,8 @@
 # Badminton World Federation API
 A simple and easy-to-use API that returns JSON metadata for current and historical badminton world rankings alongside detailed player information.
 
+(A fun project, not affiliated with BWF in any way)
+
 ## Check it out
 
 ### Access
