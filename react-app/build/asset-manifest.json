@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bwf-api/static/css/main.a92e50ac.chunk.css",
+    "main.js": "/bwf-api/static/js/main.c19043c1.chunk.js",
+    "main.js.map": "/bwf-api/static/js/main.c19043c1.chunk.js.map",
+    "runtime-main.js": "/bwf-api/static/js/runtime-main.5ba11e03.js",
+    "runtime-main.js.map": "/bwf-api/static/js/runtime-main.5ba11e03.js.map",
+    "static/js/2.7f30a72f.chunk.js": "/bwf-api/static/js/2.7f30a72f.chunk.js",
+    "static/js/2.7f30a72f.chunk.js.map": "/bwf-api/static/js/2.7f30a72f.chunk.js.map",
+    "index.html": "/bwf-api/index.html",
+    "precache-manifest.44288280ccbbf8437901df3ef3a0a157.js": "/bwf-api/precache-manifest.44288280ccbbf8437901df3ef3a0a157.js",
+    "service-worker.js": "/bwf-api/service-worker.js",
+    "static/css/main.a92e50ac.chunk.css.map": "/bwf-api/static/css/main.a92e50ac.chunk.css.map",
+    "static/js/2.7f30a72f.chunk.js.LICENSE.txt": "/bwf-api/static/js/2.7f30a72f.chunk.js.LICENSE.txt",
+    "static/media/bwf.png": "/bwf-api/static/media/bwf.0a7f26d5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ba11e03.js",
+    "static/js/2.7f30a72f.chunk.js",
+    "static/css/main.a92e50ac.chunk.css",
+    "static/js/main.c19043c1.chunk.js"
+  ]
+}

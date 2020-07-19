@@ -2,8 +2,10 @@ from flask import Flask, jsonify
 from flask_caching import Cache
 from bwf import rankings
 import datetime
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app)
 # app = Flask(__name__)
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 

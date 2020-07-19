@@ -16,23 +16,24 @@ class JsonFile extends Component{
 
     getRanking() {
         const {event, year, week, rows} = this.props.match.params
+        console.log(this.props.match.params)
         
         if (typeof year == 'undefined' && typeof week == 'undefined' && typeof rows == 'undefined') {
-            return fetch(`/api/${event}`).then(data => data.json()).then(json => {
+            return fetch(`http://localhost:5000/api/${event}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
         else if (typeof year == 'undefined' && typeof week == 'undefined') {
-            return fetch(`/api/${event}/${rows}`).then(data => data.json()).then(json => {
+            return fetch(`http://localhost:5000/api/${event}/${rows}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
         else if (typeof rows == 'undefined') {
-            return fetch(`/api/${event}/${year}/${week}`).then(data => data.json()).then(json => {
+            return fetch(`http://localhost:5000/api/${event}/${year}/${week}`).then(data => data.json()).then(json => {
                 this.setState({ notRan: false, json})
             })
         }
-        return fetch(`/api/${event}/${year}/${week}/${rows}`).then(data => data.json()).then(json => {
+        return fetch(`http://localhost:5000/api/${event}/${year}/${week}/${rows}`).then(data => data.json()).then(json => {
             this.setState({ notRan: false, json})
         })
     }
