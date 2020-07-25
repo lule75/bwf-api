@@ -6,9 +6,9 @@ A simple and easy-to-use API that returns JSON metadata for current and historic
 ## Check it out
 
 ### Access
-The online web app can be accessed at https://raymondmengji.github.io/bwf-api/
+The online web app can be accessed at https://bwfapi.herokuapp.com
 
-Note: May load main page and JSON metadata slowly initially
+Note: May load main page and JSON metadata slowly at first
 
 ### Compatability
 Web app accessible across all browsers except for certain IE versions
