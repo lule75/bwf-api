@@ -19,7 +19,6 @@ Web app accessible across all browsers except for certain IE versions
 * GET requests for player bio
 * GET requests for specific tournaments
 * User accounts with unique API keys
-* Fix GET request issue with Postman
 
 ### Technologies Used
 HTML/CSS/Javascript/Python
