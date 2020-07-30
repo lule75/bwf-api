@@ -3,6 +3,11 @@ A simple and easy-to-use API that returns JSON metadata for current and historic
 
 (A fun project, not affiliated with BWF in any way)
 
+## Screenshots
+![Screenshot1](/img/img1.png?raw=true)
+
+![Screenshot2](/img/img2.png?raw=true)
+
 ## Check it out
 
 ### Access
