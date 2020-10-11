@@ -1,6 +1,7 @@
 import requests
 import bs4
 import json
+import datetime
 from bs4 import BeautifulSoup
 
 
@@ -21,6 +22,10 @@ class Player:
         return str(self.__dict__)
 
 def rankings(event, year, week, rows):
+    date = datetime.date.today()
+    curYear, curWeek, curDay_of_week = date.isocalendar()
+    if curYear == year and week > 12:
+        week = 12
 
     if event == "men-singles":
         page = requests.get('https://bwfbadminton.com/rankings/2/bwf-world-rankings/6/men-s-singles/' + str(year) + '/' 
@@ -42,7 +47,6 @@ def rankings(event, year, week, rows):
 
     try:
         soup = BeautifulSoup(page.content, 'html.parser')
-
         class_to_ignore = ["tr-ranking-detail"]
 
         l = soup.find_all("tr", class_=lambda x: x not in class_to_ignore)
